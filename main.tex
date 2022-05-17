@@ -1,0 +1,109 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+\usetheme{Singapore}
+\setbeamercovered{transparent}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+\usepackage{xcolor}
+\usepackage{calc}
+\usepackage{amsmath}
+
+\setbeamertemplate{caption}[numbered]
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\newcommand{\lnn}[1]{
+  \ln\left(#1\right)
+}
+
+\newlength\dlf
+\newcommand\alignedbox[2]{
+  % #1 = before alignment
+  % #2 = after alignment
+  &
+  \begingroup
+  \settowidth\dlf{$\displaystyle #1$}
+  \addtolength\dlf{\fboxsep+\fboxrule}
+  \hspace{-\dlf}
+  \fcolorbox{red}{yellow}{$\displaystyle #1 #2$}
+  \endgroup
+}
+
+\pgfdeclareimage[height=1cm]{university-logo}{nycu_logo.pdf}
+\logo{\pgfuseimage{university-logo}}
+
+\title{Title}
+\author{Tzu-Chun, Oscar, Hsu} 
+\institute[National Yang Ming Chiao Tung University (NYCU)] 
+{
+    Institute of Computer Science and Engineering \\
+    National Yang Ming Chiao Tung University (NYCU) \\
+    \textit{vm3y3rmp40719@gmail.com} \\~\\
+    Superviesd by Prof. Yu-Shun, Wang	
+}
+\date{Mar 17th, 2022} 
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Table of contents} 
+\tableofcontents 
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Background}
+\begin{frame}
+    \Huge{\centerline{Background}}
+\end{frame}
+\begin{frame}
+    \frametitle{Background}
+    \begin{block}{Background}
+        \begin{itemize}
+            \item Cite 1\cite{1}.
+            \item Cite 2\cite{2}.
+            \item Cite 3\cite{3}.
+            \item Cite 4\cite{4}.
+            \item Cite 5\cite{5}.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{References}
+\begin{frame}
+    \Huge{\centerline{References}}
+\end{frame}
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+    % \bibliographystyle{gbt7714-2005}
+    \bibliographystyle{ieeetr}
+    \bibliography{bibliography}
+\end{frame}
+
+\section{Thanks}
+\begin{frame}
+    \begin{center}
+        \Huge{Thanks for your attention} \\~\\
+        \normalsize{Tzu-Chun, Oscar, Hsu} \\~\\
+        \small{Institute of Computer Science and Engineering} \\
+        \small{National Yang Ming Chiao Tung University (NYCU)} \\
+        \small{\textit{vm3y3rmp40719@gmail.com}} \\~\\
+        \small{Superviesd by Prof. Yu-Shun, Wang} \\~\\
+        Mar 17th, 2022
+    \end{center}
+\end{frame}
+
+\end{document} 

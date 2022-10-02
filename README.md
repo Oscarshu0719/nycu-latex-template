@@ -1,6 +1,6 @@
-# nycu-ppt-latex
+# nycu-ppt-templates
 
-LaTeX presentation template for National Yang Ming Chiao Tung University (NYCU).
+LaTeX templates for National Yang Ming Chiao Tung University (NYCU).
 
 ## Usage
 
@@ -15,6 +15,10 @@ LaTeX presentation template for National Yang Ming Chiao Tung University (NYCU).
 - Windows: Double click to run `clean.bat`.
 
 - Linux and macOS: `bash clean.sh`.
+
+## References
+
+- [latex-homework-template](https://github.com/jdavis/latex-homework-template) from [jdavis](https://github.com/jdavis).
 
 ## License
 
